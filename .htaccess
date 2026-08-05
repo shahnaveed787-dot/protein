@@ -1,0 +1,29 @@
+RewriteEngine On
+
+# Serve existing files and directories as-is
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Homepage
+RewriteRule ^$ index.html [L]
+
+# Clean post URLs -> .html files
+RewriteRule ^about/?$ about.html [L]
+RewriteRule ^contact/?$ contact.html [L]
+RewriteRule ^privacy-policy/?$ privacy-policy.html [L]
+RewriteRule ^disclaimer/?$ disclaimer.html [L]
+RewriteRule ^terms/?$ terms.html [L]
+RewriteRule ^ingredients-nutrition/?$ ingredients-nutrition.html [L]
+RewriteRule ^reviews-health/?$ reviews-health.html [L]
+RewriteRule ^flavors/?$ flavors.html [L]
+RewriteRule ^product-lineup/?$ product-lineup.html [L]
+RewriteRule ^protein-powder/?$ protein-powder.html [L]
+RewriteRule ^where-to-buy/?$ where-to-buy.html [L]
+
+# Redirect old .html URLs to clean URLs (keep query/hash client-side)
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
