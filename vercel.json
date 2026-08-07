@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/about", "destination": "/about-us", "permanent": true },
+    { "source": "/contact", "destination": "/contact-us", "permanent": true },
+    { "source": "/terms", "destination": "/terms-and-conditions", "permanent": true },
+    { "source": "/about.html", "destination": "/about-us", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact-us", "permanent": true },
+    { "source": "/terms.html", "destination": "/terms-and-conditions", "permanent": true }
+  ]
+}

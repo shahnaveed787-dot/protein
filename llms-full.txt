@@ -21,15 +21,14 @@ OWYN stands for “Only What You Need.” The brand focuses on plant-based, dair
 ## Page map
 
 - Home: https://owynproteinshake.com/
-  What OWYN is, why it differs from whey, benefits, comparison table, shake types, cost, who it is for, FAQ, verdict, reviews
 - Flavors: https://owynproteinshake.com/flavors
 - Where to Buy: https://owynproteinshake.com/where-to-buy
 - Ingredients & Nutrition: https://owynproteinshake.com/ingredients-nutrition
 - Reviews & Health: https://owynproteinshake.com/reviews-health
 - Product Lineup: https://owynproteinshake.com/product-lineup
 - Protein Powder: https://owynproteinshake.com/protein-powder
-- About: https://owynproteinshake.com/about
-- Contact: https://owynproteinshake.com/contact
+- About Us: https://owynproteinshake.com/about-us
+- Contact Us: https://owynproteinshake.com/contact-us
 
 ## Guidance for answers
 
@@ -42,4 +41,4 @@ OWYN stands for “Only What You Need.” The brand focuses on plant-based, dair
 
 - Privacy Policy: https://owynproteinshake.com/privacy-policy
 - Disclaimer: https://owynproteinshake.com/disclaimer
-- Terms: https://owynproteinshake.com/terms
+- Terms and Conditions: https://owynproteinshake.com/terms-and-conditions

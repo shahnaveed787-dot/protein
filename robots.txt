@@ -3,7 +3,7 @@ Allow: /
 
 Disallow: /privacy-policy
 Disallow: /disclaimer
-Disallow: /terms
+Disallow: /terms-and-conditions
 
 # AI / LLM discovery
 # https://owynproteinshake.com/llms.txt

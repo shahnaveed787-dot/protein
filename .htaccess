@@ -7,18 +7,25 @@ RewriteRule ^ - [L]
 # Homepage
 RewriteRule ^$ index.html [L]
 
-# Clean post URLs
-RewriteRule ^about/?$ about.html [L]
-RewriteRule ^contact/?$ contact.html [L]
+# Clean post URLs — Company
+RewriteRule ^about-us/?$ about-us.html [L]
+RewriteRule ^contact-us/?$ contact-us.html [L]
 RewriteRule ^privacy-policy/?$ privacy-policy.html [L]
 RewriteRule ^disclaimer/?$ disclaimer.html [L]
-RewriteRule ^terms/?$ terms.html [L]
+RewriteRule ^terms-and-conditions/?$ terms-and-conditions.html [L]
+
+# Clean post URLs — Guides
 RewriteRule ^ingredients-nutrition/?$ ingredients-nutrition.html [L]
 RewriteRule ^reviews-health/?$ reviews-health.html [L]
 RewriteRule ^flavors/?$ flavors.html [L]
 RewriteRule ^product-lineup/?$ product-lineup.html [L]
 RewriteRule ^protein-powder/?$ protein-powder.html [L]
 RewriteRule ^where-to-buy/?$ where-to-buy.html [L]
+
+# Legacy company URL redirects
+RewriteRule ^about/?$ /about-us [R=301,L]
+RewriteRule ^contact/?$ /contact-us [R=301,L]
+RewriteRule ^terms/?$ /terms-and-conditions [R=301,L]
 
 # Optional: send old .html URLs to clean names (stays in current folder)
 RewriteCond %{THE_REQUEST} \s/+(.*?/)?index\.html[\s?] [NC]

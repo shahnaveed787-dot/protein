@@ -16,11 +16,14 @@ This site helps readers research OWYN (Only What You Need) plant-based protein p
 
 ## Company
 
-- [About Us](https://owynproteinshake.com/about): Who we are and what this informational guide covers
-- [Contact](https://owynproteinshake.com/contact): How to reach this site for content questions
+- [About Us](https://owynproteinshake.com/about-us): Who we are and what this informational guide covers
+- [Contact Us](https://owynproteinshake.com/contact-us): How to reach this site for content questions
 
 ## Optional
 
 - [Full LLM context](https://owynproteinshake.com/llms-full.txt): Expanded site summary with key facts for AI agents
 - [XML Sitemap](https://owynproteinshake.com/sitemap.xml): Machine-readable list of indexable URLs
+- [Privacy Policy](https://owynproteinshake.com/privacy-policy): Privacy information
+- [Disclaimer](https://owynproteinshake.com/disclaimer): Content disclaimer
+- [Terms and Conditions](https://owynproteinshake.com/terms-and-conditions): Site terms
 - [Official OWYN store](https://liveowyn.com/): Brand website for products, orders, and official support
