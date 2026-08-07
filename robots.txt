@@ -5,4 +5,8 @@ Disallow: /privacy-policy
 Disallow: /disclaimer
 Disallow: /terms
 
+# AI / LLM discovery
+# https://owynproteinshake.com/llms.txt
+# https://owynproteinshake.com/llms-full.txt
+
 Sitemap: https://owynproteinshake.com/sitemap.xml
