@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /privacy-policy
+Disallow: /disclaimer
+Disallow: /terms
+
+Sitemap: https://owynproteinshake.com/sitemap.xml
