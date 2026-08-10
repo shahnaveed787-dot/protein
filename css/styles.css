@@ -14,8 +14,8 @@
   --accent: #e8a84a;
   --radius: 4px;
   --shadow: 0 24px 60px rgba(6, 42, 44, 0.18);
-  --font-display: "Poppins", sans-serif;
-  --font-body: "Poppins", sans-serif;
+  --font-display: "Poppins", system-ui, -apple-system, Segoe UI, sans-serif;
+  --font-body: "Poppins", system-ui, -apple-system, Segoe UI, sans-serif;
   --max: 1180px;
   --header-h: 72px;
 }
@@ -1106,8 +1106,23 @@ td:first-child { font-weight: 600; color: var(--ink); }
   .flavor-grid,
   .image-grid { grid-template-columns: 1fr; }
 
+  .hero {
+    min-height: min(72vh, 640px);
+  }
+
   .hero-photo-wrap img {
     object-position: center center;
+    transform: none;
+  }
+
+  /* Paint hero text immediately for better mobile FCP / Speed Index */
+  .hero-tagline,
+  .hero h1,
+  .hero-lede,
+  .hero-cta {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
 
