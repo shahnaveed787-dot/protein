@@ -1143,12 +1143,6 @@ td:first-child { font-weight: 600; color: var(--ink); }
   .flavor-grid { grid-template-columns: 1fr 1fr; }
 }
 
-@media (min-width: 761px) {
-  :root {
-    --font-display: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
-    --font-body: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
-  }
-}
 
 @media (max-width: 760px) {
   .topic-grid,
