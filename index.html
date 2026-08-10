@@ -9,21 +9,53 @@
   <meta name="google-site-verification" content="bO8VDQXrxl7aJc4txqWMOIZOaKcgx4U91y5D2DphynE" />
   <link rel="canonical" href="https://owynproteinshake.com/" />
   <link type="text/plain" rel="llms-txt" href="https://owynproteinshake.com/llms.txt" />
-  <link rel="preload" as="image" type="image/webp" href="assets/images/owyn-plant-based-protein-lineup-640.webp" imagesrcset="assets/images/owyn-plant-based-protein-lineup-640.webp 640w, assets/images/owyn-plant-based-protein-lineup-800.webp 800w, assets/images/owyn-plant-based-protein-lineup-1200.webp 1200w, assets/images/owyn-hero-desktop.webp 1600w" imagesizes="100vw" fetchpriority="high" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <!-- Desktop-only fonts: skip Google Fonts on mobile for faster FCP/LCP -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" media="(min-width: 761px)" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin media="(min-width: 761px)" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" media="(min-width: 761px)" />
+  <link rel="preload" as="image" href="assets/images/owyn-plant-based-protein-lineup-640.webp" type="image/webp" fetchpriority="high" />
+  <!-- Critical CSS inlined to remove render-blocking styles.css from LCP path -->
   <style>
-    /* Critical above-the-fold paint helpers for mobile PSI */
-    @media (max-width: 760px) {
-      body { background: #f3fafb !important; }
-      .hero { min-height: 62vh !important; }
-      .hero-tagline, .hero h1, .hero-lede, .hero-cta { animation: none !important; opacity: 1 !important; transform: none !important; }
-      .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+    :root{--teal-950:#062a2c;--teal-900:#0a3d41;--teal-800:#0f5559;--teal-700:#147078;--teal-300:#7fd4d8;--teal-100:#d8f3f4;--ink:#102224;--muted:#4a6568;--paper:#f3fafb;--white:#fff;--max:1180px;--header-h:72px;--font-display:system-ui,-apple-system,"Segoe UI",sans-serif;--font-body:system-ui,-apple-system,"Segoe UI",sans-serif}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:var(--font-body);color:var(--ink);background:var(--paper);line-height:1.65;font-size:1.05rem}
+    img{max-width:100%;display:block}
+    a{color:var(--teal-700);text-decoration-thickness:1px;text-underline-offset:.18em}
+    h1{font-family:var(--font-display);line-height:1.15;letter-spacing:-.02em;margin:0 0 .75rem;font-weight:800}
+    p{margin:0 0 1rem;color:var(--muted)}
+    .skip-link{position:absolute;left:-999px;top:0}
+    .promo-bar{background:var(--teal-950);color:var(--teal-100);text-align:center;font-size:.85rem;font-weight:500;letter-spacing:.04em;padding:.55rem 1rem}
+    .promo-bar p{margin:0;color:inherit}
+    .site-header{position:sticky;top:0;z-index:50;background:#f3fafb;border-bottom:1px solid rgba(15,85,89,.08)}
+    .header-inner{width:min(100% - 2rem,var(--max));margin:0 auto;min-height:var(--header-h);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem}
+    .logo{font-family:var(--font-display);font-weight:800;font-size:1.55rem;letter-spacing:.08em;color:var(--teal-900);text-decoration:none}
+    .primary-nav{display:none}
+    .nav-toggle{display:flex;width:44px;height:44px;border:0;background:transparent;padding:10px;flex-direction:column;justify-content:center;gap:6px}
+    .nav-toggle span{display:block;height:2px;background:var(--teal-900);border-radius:2px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.4rem;border-radius:999px;border:2px solid transparent;font-weight:700;font-size:.95rem;text-decoration:none}
+    .btn-sm{padding:.65rem 1.1rem;font-size:.88rem}
+    .btn-solid{background:var(--teal-900);color:var(--white)}
+    .btn-ghost{background:transparent;border-color:rgba(255,255,255,.55);color:var(--white)}
+    .header-actions .btn{white-space:nowrap}
+    .hero{position:relative;min-height:min(62vh,560px);display:grid;align-items:end;overflow:hidden;color:var(--white);background:var(--teal-900)}
+    .hero-media,.hero-photo-wrap{position:absolute;inset:0;z-index:0;overflow:hidden}
+    .hero-photo-wrap picture{display:block;width:100%;height:100%}
+    .hero-photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center center}
+    .hero-photo-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(6,42,44,.92) 0%,rgba(10,61,65,.78) 45%,rgba(6,42,44,.35) 100%)}
+    .hero-content{position:relative;z-index:1;width:min(100% - 2.5rem,var(--max));margin:0 auto 0 max(1.25rem,calc((100% - var(--max)) / 2));padding:4.5rem 0 3rem;max-width:640px}
+    .hero-tagline{margin:0 0 .65rem;font-family:var(--font-display);font-size:1.05rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-300)}
+    .hero h1{color:var(--white);max-width:18ch;font-size:clamp(1.85rem,6vw,3.15rem);margin-bottom:1rem}
+    .hero-lede{color:rgba(255,255,255,.88);font-size:1.05rem;max-width:38ch;margin-bottom:1.75rem}
+    .hero-cta{display:flex;flex-wrap:wrap;gap:.85rem}
+    .reveal{opacity:1!important;transform:none!important;transition:none!important}
+    @media (min-width:761px){
+      :root{--font-display:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;--font-body:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif}
+      .primary-nav{display:flex;justify-content:center;gap:1.35rem;flex-wrap:wrap}
+      .primary-nav a{color:var(--ink);text-decoration:none;font-size:.95rem;font-weight:500}
+      .nav-toggle{display:none}
+      .hero{min-height:calc(100vh - 110px)}
+      .hero-photo-wrap img{object-position:center right}
     }
   </style>
+  <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="css/styles.css" /></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" media="(min-width: 761px)" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -57,16 +89,18 @@
     <section class="hero">
       <div class="hero-media">
         <div class="hero-photo-wrap">
-          <img
-            src="assets/images/owyn-plant-based-protein-lineup-640.webp"
-            srcset="assets/images/owyn-plant-based-protein-lineup-640.webp 640w, assets/images/owyn-plant-based-protein-lineup-800.webp 800w, assets/images/owyn-plant-based-protein-lineup-1200.webp 1200w, assets/images/owyn-hero-desktop.webp 1600w"
-            sizes="100vw"
-            alt="OWYN plant based protein shake lineup with vegan protein drink bottles and plant protein powder tubs"
-            width="1600"
-            height="900"
-            decoding="async"
-            fetchpriority="high"
-          />
+          <picture>
+            <source media="(max-width: 760px)" srcset="assets/images/owyn-plant-based-protein-lineup-640.webp" type="image/webp" />
+            <source media="(min-width: 761px)" srcset="assets/images/owyn-plant-based-protein-lineup-1200.webp 1200w, assets/images/owyn-hero-desktop.webp 1600w" sizes="100vw" type="image/webp" />
+            <img
+              src="assets/images/owyn-plant-based-protein-lineup-640.webp"
+              alt="OWYN plant based protein shake lineup with vegan protein drink bottles and plant protein powder tubs"
+              width="1600"
+              height="900"
+              decoding="sync"
+              fetchpriority="high"
+            />
+          </picture>
         </div>
       </div>
       <div class="hero-content">
@@ -94,11 +128,14 @@
       <div class="container narrow">
         <figure class="media-frame wide reveal">
           <img
-            src="assets/images/owyn-protein-shake-powder-promo.webp"
+            src="assets/images/owyn-protein-shake-powder-promo-700.webp"
+            srcset="assets/images/owyn-protein-shake-powder-promo-700.webp 700w, assets/images/owyn-protein-shake-powder-promo-1100.webp 1100w"
+            sizes="(max-width: 760px) 100vw, 760px"
             alt="OWYN vegan protein shake and OWYN protein powder with plant based protein drinks for dairy free nutrition"
             width="1200"
             height="675"
             loading="lazy"
+            decoding="async"
           />
         </figure>
         <p class="eyebrow">Introduction</p>
@@ -116,11 +153,14 @@
       <div class="container split">
         <div class="split-media reveal">
           <img
-            src="assets/images/owyn-protein-shake-hero.webp"
+            src="assets/images/owyn-protein-shake-hero-600.webp"
+            srcset="assets/images/owyn-protein-shake-hero-600.webp 600w, assets/images/owyn-protein-shake-hero-920.webp 920w"
+            sizes="(max-width: 760px) 100vw, 460px"
             alt="Only What You Need protein drink and OWYN plant based protein shake with clean vegan protein drinks"
             width="900"
             height="700"
             loading="lazy"
+            decoding="async"
           />
         </div>
         <div class="split-copy reveal">

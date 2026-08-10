@@ -3,6 +3,8 @@
   const primaryNav = document.querySelector("#primary-nav");
   const header = document.querySelector(".site-header");
   const form = document.querySelector(".newsletter-form");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const isMobile = window.matchMedia("(max-width: 760px)").matches;
 
   if (navToggle && primaryNav) {
     navToggle.addEventListener("click", () => {
@@ -20,17 +22,28 @@
     });
   }
 
-  const onScroll = () => {
-    if (!header) return;
-    header.style.boxShadow =
-      window.scrollY > 8 ? "0 8px 28px rgba(6, 42, 44, 0.08)" : "none";
-  };
+  // Avoid forced reflow: toggle a class instead of reading/writing inline styles
+  if (header) {
+    let ticking = false;
+    const syncHeader = () => {
+      header.classList.toggle("is-scrolled", window.scrollY > 8);
+      ticking = false;
+    };
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(syncHeader);
+      },
+      { passive: true }
+    );
+    syncHeader();
+  }
 
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-
+  // Skip reveal observers on mobile — content is already visible via CSS
   const reveals = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window) {
+  if (!isMobile && !reduceMotion && "IntersectionObserver" in window) {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
