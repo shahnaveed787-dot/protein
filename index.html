@@ -9,13 +9,21 @@
   <meta name="google-site-verification" content="bO8VDQXrxl7aJc4txqWMOIZOaKcgx4U91y5D2DphynE" />
   <link rel="canonical" href="https://owynproteinshake.com/" />
   <link type="text/plain" rel="llms-txt" href="https://owynproteinshake.com/llms.txt" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="image" type="image/webp" href="assets/images/owyn-plant-based-protein-lineup-800.webp" imagesrcset="assets/images/owyn-plant-based-protein-lineup-800.webp 800w, assets/images/owyn-plant-based-protein-lineup-1200.webp 1200w, assets/images/owyn-hero-desktop.webp 1600w" imagesizes="100vw" fetchpriority="high" />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" /></noscript>
+  <link rel="preload" as="image" type="image/webp" href="assets/images/owyn-plant-based-protein-lineup-640.webp" imagesrcset="assets/images/owyn-plant-based-protein-lineup-640.webp 640w, assets/images/owyn-plant-based-protein-lineup-800.webp 800w, assets/images/owyn-plant-based-protein-lineup-1200.webp 1200w, assets/images/owyn-hero-desktop.webp 1600w" imagesizes="100vw" fetchpriority="high" />
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- Desktop-only fonts: skip Google Fonts on mobile for faster FCP/LCP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" media="(min-width: 761px)" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin media="(min-width: 761px)" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" media="(min-width: 761px)" />
+  <style>
+    /* Critical above-the-fold paint helpers for mobile PSI */
+    @media (max-width: 760px) {
+      body { background: #f3fafb !important; }
+      .hero { min-height: 62vh !important; }
+      .hero-tagline, .hero h1, .hero-lede, .hero-cta { animation: none !important; opacity: 1 !important; transform: none !important; }
+      .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -50,8 +58,8 @@
       <div class="hero-media">
         <div class="hero-photo-wrap">
           <img
-            src="assets/images/owyn-plant-based-protein-lineup-1200.webp"
-            srcset="assets/images/owyn-plant-based-protein-lineup-800.webp 800w, assets/images/owyn-plant-based-protein-lineup-1200.webp 1200w, assets/images/owyn-hero-desktop.webp 1600w"
+            src="assets/images/owyn-plant-based-protein-lineup-640.webp"
+            srcset="assets/images/owyn-plant-based-protein-lineup-640.webp 640w, assets/images/owyn-plant-based-protein-lineup-800.webp 800w, assets/images/owyn-plant-based-protein-lineup-1200.webp 1200w, assets/images/owyn-hero-desktop.webp 1600w"
             sizes="100vw"
             alt="OWYN plant based protein shake lineup with vegan protein drink bottles and plant protein powder tubs"
             width="1600"

@@ -14,8 +14,8 @@
   --accent: #e8a84a;
   --radius: 4px;
   --shadow: 0 24px 60px rgba(6, 42, 44, 0.18);
-  --font-display: "Poppins", system-ui, -apple-system, Segoe UI, sans-serif;
-  --font-body: "Poppins", system-ui, -apple-system, Segoe UI, sans-serif;
+  --font-display: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
   --max: 1180px;
   --header-h: 72px;
 }
@@ -1101,13 +1101,24 @@ td:first-child { font-weight: 600; color: var(--ink); }
   .flavor-grid { grid-template-columns: 1fr 1fr; }
 }
 
+@media (min-width: 761px) {
+  :root {
+    --font-display: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-body: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+}
+
 @media (max-width: 760px) {
   .topic-grid,
   .flavor-grid,
   .image-grid { grid-template-columns: 1fr; }
 
+  body {
+    background: var(--paper);
+  }
+
   .hero {
-    min-height: min(72vh, 640px);
+    min-height: min(62vh, 560px);
   }
 
   .hero-photo-wrap img {
@@ -1115,14 +1126,16 @@ td:first-child { font-weight: 600; color: var(--ink); }
     transform: none;
   }
 
-  /* Paint hero text immediately for better mobile FCP / Speed Index */
+  /* Paint immediately for better mobile FCP / Speed Index */
   .hero-tagline,
   .hero h1,
   .hero-lede,
-  .hero-cta {
+  .hero-cta,
+  .reveal {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
+    transition: none !important;
   }
 }
 
