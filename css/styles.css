@@ -268,14 +268,15 @@ strong { color: var(--ink); }
   color: var(--teal-900);
 }
 
-/* Hero */
+/* Hero — mobile-first values match critical CSS to prevent CLS when styles.css loads */
 .hero {
   position: relative;
-  min-height: calc(100vh - 110px);
+  min-height: min(62vh, 560px);
   display: grid;
   align-items: end;
   overflow: hidden;
   color: var(--white);
+  background: var(--teal-900);
 }
 
 .hero-media {
@@ -367,45 +368,75 @@ strong { color: var(--ink); }
 .hero-content {
   position: relative;
   z-index: 1;
-  width: min(100% - 2.5rem, var(--max));
-  margin: 0 auto;
-  padding: clamp(5rem, 12vw, 8rem) 0 clamp(3.5rem, 8vw, 5.5rem);
+  width: min(100% - 2.5rem, 640px);
+  margin: 0 0 0 1.25rem;
+  padding: 4.5rem 0 3rem;
   max-width: 640px;
-  margin-left: max(1.25rem, calc((100% - var(--max)) / 2));
+  /* Reserve space so late CSS/fonts cannot shift hero text (CLS) */
+  min-height: 22rem;
 }
 
 .hero-tagline {
   margin: 0 0 0.65rem;
   font-family: var(--font-display);
-  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--teal-300);
-  animation: brandIn 1s ease both;
 }
 
 .hero h1 {
   color: var(--white);
   max-width: 18ch;
-  font-size: clamp(1.85rem, 4.2vw, 3.15rem);
+  font-size: clamp(1.85rem, 6vw, 3.15rem);
   margin-bottom: 1rem;
-  animation: brandIn 1s ease 0.12s both;
 }
 
 .hero-lede {
   color: rgba(255,255,255,0.88);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
+  line-height: 1.55;
   max-width: 38ch;
   margin-bottom: 1.75rem;
-  animation: brandIn 1s ease 0.22s both;
 }
 
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
-  animation: brandIn 1s ease 0.32s both;
+}
+
+@media (min-width: 761px) {
+  .hero {
+    min-height: calc(100vh - 110px);
+  }
+
+  .hero-content {
+    width: min(100% - 2.5rem, var(--max));
+    margin: 0 auto 0 max(1.25rem, calc((100% - var(--max)) / 2));
+    padding: clamp(5rem, 12vw, 8rem) 0 clamp(3.5rem, 8vw, 5.5rem);
+    min-height: 0;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+    animation: brandIn 1s ease both;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.85rem, 4.2vw, 3.15rem);
+    animation: brandIn 1s ease 0.12s both;
+  }
+
+  .hero-lede {
+    font-size: 1.15rem;
+    animation: brandIn 1s ease 0.22s both;
+  }
+
+  .hero-cta {
+    animation: brandIn 1s ease 0.32s both;
+  }
 }
 
 /* Trust strip */
@@ -550,7 +581,7 @@ strong { color: var(--ink); }
   font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 800;
-  color: var(--teal-500);
+  color: var(--teal-900);
 }
 
 /* Compare table */
@@ -884,11 +915,6 @@ td:first-child { font-weight: 600; color: var(--ink); }
   }
 
   .primary-nav.open { display: flex; }
-
-  .hero-content {
-    margin-left: 1.25rem;
-    max-width: min(100% - 2.5rem, 640px);
-  }
 
   .hero-product {
     width: min(220px, 48vw);

@@ -38,10 +38,10 @@
     .hero-photo-wrap picture{display:block;width:100%;height:100%}
     .hero-photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center center}
     .hero-photo-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(6,42,44,.92) 0%,rgba(10,61,65,.78) 45%,rgba(6,42,44,.35) 100%)}
-    .hero-content{position:relative;z-index:1;width:min(100% - 2.5rem,var(--max));margin:0 auto 0 max(1.25rem,calc((100% - var(--max)) / 2));padding:4.5rem 0 3rem;max-width:640px}
+    .hero-content{position:relative;z-index:1;width:min(100% - 2.5rem,640px);margin:0 0 0 1.25rem;padding:4.5rem 0 3rem;max-width:640px;min-height:22rem}
     .hero-tagline{margin:0 0 .65rem;font-family:var(--font-display);font-size:1.05rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-300)}
     .hero h1{color:var(--white);max-width:18ch;font-size:clamp(1.85rem,6vw,3.15rem);margin-bottom:1rem}
-    .hero-lede{color:rgba(255,255,255,.88);font-size:1.05rem;max-width:38ch;margin-bottom:1.75rem}
+    .hero-lede{color:rgba(255,255,255,.88);font-size:1.05rem;line-height:1.55;max-width:38ch;margin-bottom:1.75rem}
     .hero-cta{display:flex;flex-wrap:wrap;gap:.85rem}
     .reveal{opacity:1!important;transform:none!important;transition:none!important}
     @media (min-width:761px){
