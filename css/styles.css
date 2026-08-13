@@ -505,13 +505,39 @@ strong { color: var(--ink); }
 }
 
 .feature {
-  padding: 1.4rem 1.1rem;
+  padding: 0 0 1.25rem;
   background: var(--white);
   border-top: 3px solid var(--teal-500);
-  min-height: 180px;
+  overflow: hidden;
 }
 
-.feature p { margin: 0; font-size: 0.95rem; }
+.feature-media {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 640 / 420;
+  object-fit: cover;
+  margin: 0 0 0.95rem;
+  background: rgba(15, 85, 89, 0.06);
+}
+
+.feature h3 {
+  padding: 0 1.1rem;
+  margin-bottom: 0.45rem;
+  font-size: 1.05rem;
+}
+
+.feature p {
+  margin: 0;
+  padding: 0 1.1rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1100px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* Ingredients panel */
 .ingredient-panel {
