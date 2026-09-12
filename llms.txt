@@ -1,23 +1,23 @@
 # OWYN Protein Shake
 
-> Independent informational guide to OWYN protein shakes, vegan protein drinks, plant-based protein powders, flavors, nutrition, reviews, and where to buy — including Costco availability. Official brand site: https://liveowyn.com/
+> Independent informational guide to OWYN protein shakes, vegan protein drinks, plant-based protein powders, flavors, nutrition, reviews, and where to buy. Official brand site: https://liveowyn.com/
 
-This site helps readers research OWYN (Only What You Need) plant-based protein products. Content covers ready-to-drink shakes, powders, ingredients, health FAQs, product types, and shopping tips. Product details can change by flavor and retailer; always check current labels and the official brand for the latest facts.
+This site helps readers research OWYN (Only What You Need) plant-based protein products. Each URL owns one primary intent to avoid keyword cannibalization. Product details can change by flavor and retailer; always check current labels and the official brand for the latest facts.
 
-## Main pages
+## Main pages (primary keyword)
 
-- [Home](https://owynproteinshake.com/): Overview of OWYN protein shake benefits, plant-based vs whey comparison, cost notes, FAQ, and final verdict
-- [Flavors](https://owynproteinshake.com/flavors): Chocolate, dark chocolate, vanilla, cookies and cream, strawberry banana, and related flavor guides
-- [Where to Buy](https://owynproteinshake.com/where-to-buy): Online shopping tips and OWYN protein shakes Costco availability
-- [Ingredients & Nutrition](https://owynproteinshake.com/ingredients-nutrition): Ingredients lists, nutrition facts, calories, and powder label details
-- [Reviews & Health](https://owynproteinshake.com/reviews-health): Reviews, healthy-or-not questions, side effects, and safety topics
-- [Product Lineup](https://owynproteinshake.com/product-lineup): Pro Elite, 32g shakes, nutrition shakes, coffee shakes, and bars
-- [Protein Powder](https://owynproteinshake.com/protein-powder): Plant protein powder, sugar-free options, and all-in-one formulas
+- [Home](https://owynproteinshake.com/): Hub for broad “OWYN protein shake” / brand overview terms — links out to dedicated topic pages
+- [Ingredients & Nutrition](https://owynproteinshake.com/ingredients-nutrition): OWYN protein shake ingredients, nutrition facts, calories, ingredients list
+- [Product Lineup](https://owynproteinshake.com/product-lineup): OWYN product lineup — Pro Elite, 32g shakes, nutrition shakes, protein coffee, meal styles, bars
+- [Flavors](https://owynproteinshake.com/flavors): OWYN protein shake flavors — chocolate, dark chocolate, vanilla, caramel, cookies and cream
+- [Protein Powder](https://owynproteinshake.com/protein-powder): OWYN protein powder ingredients, flavors, options, and powder reviews
+- [Where to Buy](https://owynproteinshake.com/where-to-buy): Where to buy OWYN protein shakes — stores, liveowyn.com, official support links
+- [Reviews & Health](https://owynproteinshake.com/reviews-health): OWYN protein shake review, health questions, and brand comparisons
 
 ## Company
 
-- [About Us](https://owynproteinshake.com/about-us): Who we are and what this informational guide covers
-- [Contact Us](https://owynproteinshake.com/contact-us): How to reach this site for content questions
+- [About Us](https://owynproteinshake.com/about-us): About this independent guide (not the official OWYN company)
+- [Contact Us](https://owynproteinshake.com/contact-us): Editorial / site feedback only — not OWYN customer service
 
 ## Optional
 
