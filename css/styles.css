@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap");
-
 :root {
   --teal-950: #04352f;
   --teal-900: #0b5c4d;
@@ -22,8 +20,8 @@
   --accent-2: #c8f542;
   --radius: 12px;
   --shadow: 0 24px 60px rgba(4, 53, 47, 0.16);
-  --font-display: "Syne", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
   --max: 1180px;
   --header-h: 72px;
 }
