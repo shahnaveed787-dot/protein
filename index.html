@@ -13,34 +13,34 @@
   <link rel="preload" as="image" href="assets/images/owyn-hero-desktop.webp" type="image/webp" fetchpriority="high" media="(min-width: 761px)" />
   <!-- Critical CSS inlined to remove render-blocking styles.css from LCP path -->
   <style>
-    :root{--teal-950:#062a2c;--teal-900:#0a3d41;--teal-800:#0f5559;--teal-700:#147078;--teal-300:#7fd4d8;--teal-100:#d8f3f4;--ink:#102224;--muted:#4a6568;--paper:#f3fafb;--white:#fff;--max:1180px;--header-h:72px;--font-display:system-ui,-apple-system,"Segoe UI",sans-serif;--font-body:system-ui,-apple-system,"Segoe UI",sans-serif}
+    :root{--teal-950:#04352f;--teal-900:#0b5c4d;--teal-800:#0f7a64;--teal-700:#14967a;--teal-300:#8ef0d0;--teal-100:#d8fff2;--ink:#10241f;--muted:#3f5c54;--paper:#f0fbf5;--white:#fff;--lime:#c8f542;--coral:#ff6b4a;--header-h:72px;--font-display:system-ui,-apple-system,"Segoe UI",sans-serif;--font-body:system-ui,-apple-system,"Segoe UI",sans-serif}
     *,*::before,*::after{box-sizing:border-box}
-    body{margin:0;font-family:var(--font-body);color:var(--ink);background:var(--paper);line-height:1.65;font-size:1.05rem}
+    body{margin:0;font-family:var(--font-body);color:var(--ink);background:radial-gradient(900px 420px at 8% -8%,rgba(200,245,66,.28),transparent 58%),radial-gradient(800px 400px at 92% 0%,rgba(255,107,74,.14),transparent 55%),var(--paper);line-height:1.65;font-size:1.05rem}
     img{max-width:100%;display:block}
     a{color:var(--teal-700);text-decoration-thickness:1px;text-underline-offset:.18em}
     h1{font-family:var(--font-display);line-height:1.15;letter-spacing:-.02em;margin:0 0 .75rem;font-weight:800}
     p{margin:0 0 1rem;color:var(--muted)}
     .skip-link{position:absolute;left:-999px;top:0}
-    .promo-bar{background:var(--teal-950);color:var(--teal-100);text-align:center;font-size:.85rem;font-weight:500;letter-spacing:.04em;padding:.55rem 1rem}
+    .promo-bar{background:linear-gradient(90deg,#04352f,#0f7a64 35%,#ff6b4a 70%,#c8f542);color:#06241f;text-align:center;font-size:.85rem;font-weight:700;letter-spacing:.03em;padding:.55rem 1rem}
     .promo-bar p{margin:0;color:inherit}
-    .site-header{position:sticky;top:0;z-index:50;background:#f3fafb;border-bottom:1px solid rgba(15,85,89,.08)}
-    .header-inner{width:min(100% - 2rem,var(--max));margin:0 auto;min-height:var(--header-h);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem}
+    .site-header{position:sticky;top:0;z-index:50;background:#f0fbf5;border-bottom:1px solid rgba(15,122,100,.12)}
+    .header-inner{width:min(100% - 2rem,1180px);margin:0 auto;min-height:var(--header-h);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem}
     .logo{font-family:var(--font-display);font-weight:800;font-size:1.55rem;letter-spacing:.08em;color:var(--teal-900);text-decoration:none}
     .primary-nav{display:none}
     .nav-toggle{display:flex;width:44px;height:44px;border:0;background:transparent;padding:10px;flex-direction:column;justify-content:center;gap:6px}
     .nav-toggle span{display:block;height:2px;background:var(--teal-900);border-radius:2px}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.4rem;border-radius:999px;border:2px solid transparent;font-weight:700;font-size:.95rem;text-decoration:none}
     .btn-sm{padding:.65rem 1.1rem;font-size:.88rem}
-    .btn-solid{background:var(--teal-900);color:var(--white)}
-    .btn-ghost{background:transparent;border-color:rgba(255,255,255,.55);color:var(--white)}
+    .btn-solid{background:linear-gradient(135deg,var(--teal-900),var(--teal-700));color:var(--white)}
+    .btn-ghost{background:rgba(200,245,66,.12);border-color:rgba(200,245,66,.55);color:var(--white)}
     .header-actions .btn{white-space:nowrap}
-    .hero{position:relative;min-height:min(62vh,560px);display:grid;align-items:end;overflow:hidden;color:var(--white);background:var(--teal-900)}
+    .hero{position:relative;min-height:min(62vh,560px);display:grid;align-items:end;overflow:hidden;color:var(--white);background:linear-gradient(135deg,#04352f,#0f7a64 50%,#ff6b4a)}
     .hero-media,.hero-photo-wrap{position:absolute;inset:0;z-index:0;overflow:hidden}
     .hero-photo-wrap picture{display:block;width:100%;height:100%}
     .hero-photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center center}
-    .hero-photo-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(6,42,44,.92) 0%,rgba(10,61,65,.78) 45%,rgba(6,42,44,.35) 100%)}
+    .hero-photo-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(4,53,47,.9) 0%,rgba(15,122,100,.72) 42%,rgba(255,107,74,.28) 78%,rgba(4,53,47,.25) 100%)}
     .hero-content{position:relative;z-index:1;width:min(100% - 2.5rem,640px);margin:0 0 0 1.25rem;padding:4.5rem 0 3rem;max-width:640px;min-height:22rem}
-    .hero-tagline{margin:0 0 .65rem;font-family:var(--font-display);font-size:1.05rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-300)}
+    .hero-tagline{margin:0 0 .65rem;font-family:var(--font-display);font-size:1.05rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lime)}
     .hero h1{color:var(--white);max-width:18ch;font-size:clamp(1.85rem,6vw,3.15rem);margin-bottom:1rem}
     .hero-lede{color:rgba(255,255,255,.88);font-size:1.05rem;line-height:1.55;max-width:38ch;margin-bottom:1.75rem}
     .hero-cta{display:flex;flex-wrap:wrap;gap:.85rem}
@@ -60,7 +60,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="promo-bar" role="region" aria-label="Promotion">
-    <p>Plant-based protein &middot; Dairy-free &middot; Ready to drink</p>
+    <p>100% plant-powered &middot; Vegan friendly &middot; Gym-day protein ready</p>
   </div>
 
   <header class="site-header" id="top">
@@ -103,11 +103,12 @@
         </div>
       </div>
       <div class="hero-content">
-        <p class="hero-tagline">Only What You Need</p>
+        <p class="hero-tagline">Plant Power for Vegans &amp; Lifters</p>
         <h1>OWYN Protein Shake Guide</h1>
-        <p class="hero-lede">Your hub for OWYN protein shakes, plant-based protein drinks, and vegan protein shake basics — with dedicated pages for ingredients, flavors, product lineup, powder, reviews, and where to buy.</p>
+        <p class="hero-lede">Dairy-free, vegan protein shakes built for clean plant nutrition and training-day recovery — flavors, labels, and buying tips in one colorful hub.</p>
         <div class="hero-cta">
           <a class="btn btn-solid" href="ingredients-nutrition">Ingredients &amp; Nutrition</a>
+          <a class="btn btn-accent" href="product-lineup">High-Protein Lineup</a>
           <a class="btn btn-ghost" href="flavors">Browse Flavors</a>
         </div>
       </div>
@@ -115,12 +116,70 @@
 
     <section class="trust-strip" aria-label="Key features">
       <ul>
-        <li>Plant-Based Protein</li>
         <li>Vegan Friendly</li>
+        <li>Plant-Based Protein</li>
         <li>Dairy-Free</li>
-        <li>Ready to Drink</li>
-        <li>Nutrition Focused</li>
+        <li>Training-Day Ready</li>
+        <li>Clean Label Focus</li>
       </ul>
+    </section>
+
+    <section class="audience-band" id="for-you" aria-label="Built for vegans and bodybuilders">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Who It Fuels</p>
+          <h2>Made for Plant Eaters &amp; Muscle Builders</h2>
+          <p>Whether you want a dairy-free vegan shake or a convenient post-lift protein hit, OWYN keeps plant protein simple and colorful.</p>
+        </div>
+        <div class="audience-band-grid">
+          <article class="audience-panel vegan reveal">
+            <img
+              src="assets/images/lifestyle/plant-protein-flatlay-1000.webp"
+              alt="Colorful vegan plant protein shakes with peas, greens, berries, and seeds"
+              width="1000"
+              height="750"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="audience-panel-copy">
+              <span class="audience-chip">For Vegans</span>
+              <h3>Plant-only protein without dairy</h3>
+              <p>Pea, pumpkin seed, and flax-forward formulas for vegan and dairy-free routines.</p>
+              <a class="btn btn-sm btn-light" href="ingredients-nutrition">See plant ingredients</a>
+            </div>
+          </article>
+          <article class="audience-panel lifter reveal">
+            <img
+              src="assets/images/lifestyle/vegan-athlete-1200.webp"
+              alt="Athlete holding a plant protein shake after training with vegan protein foods nearby"
+              width="1200"
+              height="675"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="audience-panel-copy">
+              <span class="audience-chip">For Bodybuilders</span>
+              <h3>Ready-to-drink recovery fuel</h3>
+              <p>Grab-and-go protein for training days, higher-protein Pro Elite styles, and busy lift schedules.</p>
+              <a class="btn btn-sm btn-light" href="product-lineup">Explore high-protein options</a>
+            </div>
+          </article>
+        </div>
+        <div class="protein-callouts reveal">
+          <div class="protein-callout">
+            <strong>Vegan</strong>
+            <span>No whey, no dairy protein</span>
+          </div>
+          <div class="protein-callout">
+            <strong>20–32g</strong>
+            <span>Protein styles for training goals</span>
+          </div>
+          <div class="protein-callout">
+            <strong>RTD</strong>
+            <span>Shake after lifts — no blender</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="intro section" id="what-is">
@@ -175,13 +234,13 @@
           <p>The goal behind Only What You Need protein drink products is to provide accessible nutrition for people following vegan, vegetarian, dairy-free, or allergen-conscious diets — including anyone who wants protein shakes vegetarian or vegan protein shakes ready to drink. Learn more about this independent site on <a href="about-us">About This Website</a>.</p>
         </div>
         <div class="audience-list reveal">
-          <h3>OWYN products are commonly used by</h3>
+          <h3>Built for</h3>
           <ul>
-            <li>Fitness enthusiasts needing a quick plant protein shake</li>
-            <li>Plant-based diet followers comparing plant based protein drinks</li>
-            <li>Busy professionals who want vegan protein drinks on the go</li>
-            <li>People seeking an OWYN non dairy protein shake</li>
-            <li>Shoppers looking for the best vegan protein shake for daily use</li>
+            <li>Vegans seeking dairy-free plant protein</li>
+            <li>Bodybuilders who want whey-free training fuel</li>
+            <li>Plant-based athletes comparing protein drinks</li>
+            <li>Busy lifters who need ready-to-drink convenience</li>
+            <li>Anyone exploring the best vegan protein shake options</li>
           </ul>
         </div>
       </div>
@@ -535,21 +594,32 @@
     <section class="who section alt" id="who">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Who Itâ€™s For</p>
+          <p class="eyebrow">Who It's For</p>
           <h2>Who Should Consider an OWYN Protein Drink?</h2>
+          <p>Built to feel welcoming for vegans and practical for bodybuilders who want plant protein without whey.</p>
         </div>
+        <figure class="lifestyle-strip reveal">
+          <img
+            src="assets/images/lifestyle/bodybuilder-bench-1200.webp"
+            alt="Plant protein shake bottles on a gym bench with vegan foods for training recovery"
+            width="1200"
+            height="675"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
         <div class="who-grid">
           <article class="who-card reveal">
-            <h3>Athletes &amp; Fitness Enthusiasts</h3>
-            <p>People who exercise regularly may use OWYN protein drinks to support recovery and increase protein intake.</p>
+            <h3>Bodybuilders &amp; Lifters</h3>
+            <p>Use ready-to-drink OWYN after training for convenient plant protein — or step up to higher-protein Pro Elite styles on heavy days.</p>
           </article>
           <article class="who-card reveal">
             <h3>Vegans &amp; Plant-Based Followers</h3>
-            <p>Especially appealing to individuals who want protein without animal-based ingredients.</p>
+            <p>Dairy-free, vegan-friendly shakes that skip whey so your protein still fits a plant-only plate.</p>
           </article>
           <article class="who-card reveal">
-            <h3>Busy Professionals</h3>
-            <p>A ready-to-drink OWYN protein shake helps maintain nutrition when meal prep time is limited.</p>
+            <h3>Busy Active Routines</h3>
+            <p>No blender needed — grab a colorful ready-to-drink bottle for work, travel, or between sessions.</p>
           </article>
         </div>
       </div>
