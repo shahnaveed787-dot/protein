@@ -6,7 +6,7 @@ This site helps readers research OWYN (Only What You Need) plant-based protein p
 
 ## Main pages (primary keyword)
 
-- [Home](https://owynproteinshake.com/): Hub for broad “OWYN protein shake” / brand overview terms — links out to dedicated topic pages
+- [Home](https://owynproteinshake.com/): Primary hub for “OWYN protein shake” and broad brand/shake overview terms — links out to dedicated topic pages
 - [Ingredients & Nutrition](https://owynproteinshake.com/ingredients-nutrition): OWYN protein shake ingredients, nutrition facts, calories, ingredients list
 - [Product Lineup](https://owynproteinshake.com/product-lineup): OWYN product lineup — Pro Elite, 32g shakes, nutrition shakes, protein coffee, meal styles, bars
 - [Flavors](https://owynproteinshake.com/flavors): OWYN protein shake flavors — chocolate, dark chocolate, vanilla, caramel, cookies and cream
