@@ -759,6 +759,7 @@ td:first-child { font-weight: 600; color: var(--ink); }
 .type-card a,
 .buy-block h3,
 .buy-block p,
+.buy-block h2,
 .who-card h3,
 .who-card p {
   padding-inline: 1.25rem;
@@ -769,11 +770,32 @@ td:first-child { font-weight: 600; color: var(--ink); }
   text-decoration: none;
 }
 
-.buy-block,
+.buy-block {
+  background: var(--white);
+  border: 1px solid rgba(15, 85, 89, 0.1);
+  padding: 0 0 1.5rem;
+  overflow: hidden;
+}
+
 .who-card {
   background: var(--white);
   border: 1px solid rgba(15, 85, 89, 0.1);
   padding: 1.5rem 0.25rem 1.5rem;
+}
+
+.buy-block-media {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin: 0 0 1rem;
+  background: rgba(15, 122, 100, 0.06);
+}
+
+.buy-block h2,
+.buy-block ul {
+  padding-inline: 1.25rem;
 }
 
 .who-card {
